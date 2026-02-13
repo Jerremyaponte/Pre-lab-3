@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <string>
+#include <cmath>
+#include <cctype>
 using namespace std;
 
 class StudentInformation {
