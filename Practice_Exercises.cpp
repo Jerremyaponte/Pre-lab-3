@@ -63,3 +63,25 @@ public:
             speed = 0;
     }
 };
+int main() {
+
+    Car myCar(2014, "Hyundai Elantra GT");
+
+    cout << "Car: " << myCar.getYear() << " " << myCar.getMake() << endl;
+
+    cout << "\nAccelerating...\n";
+
+    for (int i = 0; i < 5; i++) {
+        myCar.accelerate();
+        cout << "Current Speed: " << myCar.getSpeed() << endl;
+    }
+
+    cout << "\nBraking...\n";
+
+    for (int i = 0; i < 5; i++) {
+        myCar.brake();
+        cout << "Current Speed: " << myCar.getSpeed() << endl;
+    }
+
+    return 0;
+}
